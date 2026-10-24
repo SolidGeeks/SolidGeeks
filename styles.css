@@ -151,6 +151,28 @@ section { scroll-margin-top: 1rem; }
 .empty p { margin: 0 0 2rem; color: var(--iron); font-size: var(--s1); line-height: 1.45; }
 .empty p.empty-title { color: var(--chalk); }
 
+/* ---------------------------------------------------------------- app hub */
+.apps-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 1rem 4rem; align-items: baseline; margin-bottom: 2.5rem; }
+.apps-head .section-title { margin: 0; }
+.apps-head p { margin: 0; max-width: 40rem; color: var(--iron); font-size: var(--s1); line-height: 1.45; }
+.apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--slab); }
+.app { display: flex; flex-direction: column; padding: 2.5rem 3rem 3rem 0; border-bottom: 1px solid var(--slab); }
+.app + .app { padding: 2.5rem 0 3rem 3rem; border-left: 1px solid var(--slab); }
+.app-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
+.app-glyph { width: 3.5rem; height: 3.5rem; flex: none; }
+.app-meta { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .4rem; }
+.app-meta li { font: 700 var(--s-1)/1 var(--mono); padding: .45em .6em; border: 1px solid var(--slab); color: var(--iron); }
+.app-meta li:first-child { border-color: var(--volt); color: var(--volt); }
+.app-name { margin: 0 0 .5rem; font: 700 var(--s4)/.95 var(--mono); letter-spacing: -.045em; }
+.app-tag { margin: 0 0 1.25rem; font-size: var(--s1); line-height: 1.35; color: var(--chalk); }
+.app-desc { margin: 0 0 1.5rem; color: var(--iron); max-width: 36rem; }
+.app-feats { list-style: none; margin: 0 0 1.5rem; padding: 0; border-top: 1px solid var(--slab); }
+.app-feats li { position: relative; padding: .7rem 0 .7rem 1.6rem; border-bottom: 1px solid var(--slab); font-size: var(--s0); line-height: 1.4; }
+.app-feats li::before { content: ""; position: absolute; left: 0; top: 1.15rem; width: .55rem; height: .75rem; background: var(--volt); }
+.app-stack { margin: 0 0 2rem; font: 700 var(--s-1)/1.5 var(--mono); color: var(--iron); }
+.app .actions { margin-top: auto; }
+.next { margin-top: clamp(3rem, 6vw, 5rem); }
+
 /* ---------------------------------------------------------------- join: a real sequence, so it is numbered */
 .reps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--slab); }
 .reps li { padding: 1.5rem 2rem 0 0; }
@@ -173,7 +195,9 @@ section { scroll-margin-top: 1rem; }
 @media (max-width: 1020px) {
   .top nav { display: none; }
   .top-gh { margin-left: auto; }
-  .hero-text, .standard, .licenses { grid-template-columns: 1fr; }
+  .hero-text, .standard, .licenses, .apps-head { grid-template-columns: 1fr; }
+  .apps { grid-template-columns: 1fr; }
+  .app, .app + .app { padding: 2.5rem 0 3rem; border-left: 0; }
   .words { grid-template-columns: 1fr; }
   .panel, #p-rebel, #p-rigorous, #p-secure, #p-free, .word:nth-of-type(n) { grid-column: 1; grid-row: auto; }
   .panel { padding: 1rem 0 1.75rem; border-bottom: 1px solid var(--slab); max-width: 40rem; }

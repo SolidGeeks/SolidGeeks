@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: CC-BY-SA-4.0
 // Manifesto: one word open at a time. Click / Enter / Space opens; on a mouse, hovering previews too.
 (() => {
   const root = document.querySelector('[data-words]');

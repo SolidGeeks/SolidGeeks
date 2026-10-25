@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: CC-BY-SA-4.0 */
 /* Solid Geeks — site styles. Tokens come from the logo kit (GUIDE.md). */
 @font-face { font-family: "SG Mono"; src: url(fonts/display.woff) format("woff"); font-weight: 700; font-display: swap; }
 @font-face { font-family: "SG Sans"; src: url(fonts/ui-regular.woff) format("woff"); font-weight: 400; font-display: swap; }

@@ -4,7 +4,7 @@ The Solid Geeks website, served at https://solidgeeks.github.io/SolidGeeks/: a s
 
 | File | What it is |
 |---|---|
-| `index.html` | The page. One `EDIT:` link remains: point *Pitch a project* at GitHub Discussions once they are enabled. |
+| `index.html` | The page. *Pitch a project* opens the form of the [organization's Discussions](https://github.com/orgs/SolidGeeks/discussions/categories/pitch-a-project). |
 | `styles.css`, `main.js` | Styles and the manifesto interaction. |
 | `solid-geeks.html` | The 30 s intro film (self-contained, embedded in the hero). |
 | `studio.html` | The card studio (first-merge cards, linked from the `first-merge` workflow). |

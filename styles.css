@@ -156,11 +156,11 @@ section { scroll-margin-top: 1rem; }
 .apps-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 1rem 4rem; align-items: baseline; margin-bottom: 2.5rem; }
 .apps-head .section-title { margin: 0; }
 .apps-head p { margin: 0; max-width: 40rem; color: var(--iron); font-size: var(--s1); line-height: 1.45; }
-.apps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--slab); }
+/* Two columns: four apps make two even rows */
+.apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--slab); }
 .app { display: flex; flex-direction: column; padding: 2.5rem 2.5rem 3rem; border-bottom: 1px solid var(--slab); }
-.app:first-child { padding-left: 0; }
-.app:last-child { padding-right: 0; }
-.app + .app { border-left: 1px solid var(--slab); }
+.app:nth-child(odd) { padding-left: 0; }
+.app:nth-child(even) { padding-right: 0; border-left: 1px solid var(--slab); }
 .app-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
 .app-glyph { width: 3.5rem; height: 3.5rem; flex: none; }
 .app-meta { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .4rem; }
@@ -199,7 +199,7 @@ section { scroll-margin-top: 1rem; }
 /* ---------------------------------------------------------------- responsive */
 @media (max-width: 1200px) {
   .apps { grid-template-columns: 1fr; }
-  .app, .app + .app { padding: 2.5rem 0 3rem; border-left: 0; }
+  .app, .app:nth-child(odd), .app:nth-child(even) { padding: 2.5rem 0 3rem; border-left: 0; }
 }
 @media (max-width: 1020px) {
   .top nav { display: none; }

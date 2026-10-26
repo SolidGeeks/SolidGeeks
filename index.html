@@ -86,19 +86,19 @@
         <div class="app-top">
           <svg class="app-glyph" aria-hidden="true" focusable="false" viewBox="0 0 64 64"><path d="M32 4l28 12-28 12L4 16z" fill="#C8FF2E"/><path d="M4 30l28 12 28-12" fill="none" stroke="#F2F2EE" stroke-width="3"/><path d="M4 44l28 12 28-12" fill="none" stroke="#F2F2EE" stroke-width="3"/></svg>
           <ul class="app-meta" aria-label="Release facts">
-            <li>v0.6.0</li><li>AGPL-3.0</li><li>Self-hosted</li>
+            <li>v0.7.0</li><li>AGPL-3.0</li><li>Self-hosted</li>
           </ul>
         </div>
         <p class="app-kind">Security &middot; Network mapping</p>
         <h3 class="app-name" id="app-strata">Strata</h3>
         <p class="app-tag">Your network, in layers.</p>
-        <p class="app-desc">A 3D map of an organisation&rsquo;s information system: zones, VLANs, assets and flows stacked as layers, with what is exposed, what is vulnerable and who to call. Every change is reviewed before it reaches the map.</p>
+        <p class="app-desc">A 3D map of an organisation&rsquo;s information system: zones, VLANs, assets and flows stacked as layers, with what is exposed, what is vulnerable, how an attacker would get in and who to call. Every change is reviewed before it reaches the map.</p>
         <ul class="app-feats">
-          <li>3D model and 2D diagrams sharing the same positions</li>
-          <li>Exposure by source (Internet, other VLAN, same VLAN) and asset sheets with contacts</li>
-          <li>Architecture plans, flow matrices and firewall rules; Cyberwatch, GLPI, phpIPAM and Palo Alto connectors</li>
+          <li>3D model and 2D diagram sharing the same positions, with application and business views</li>
+          <li>Attack paths from the Internet to the critical assets, blast radius of any asset, and risk priorities from CVSS, EPSS and CISA KEV</li>
+          <li>An architecture file per IS for audits and accreditation; Cyberwatch, GLPI, phpIPAM and Palo Alto connectors</li>
         </ul>
-        <p class="app-stack">Node.js, zero dependencies &middot; JSON storage &middot; Docker &middot; systemd</p>
+        <p class="app-stack">Node.js, zero dependencies &middot; JSON storage &middot; Docker &middot; Nix and NixOS &middot; systemd</p>
         <div class="actions">
           <a class="btn btn-volt" href="https://solidgeeks.github.io/strata/">Open Strata</a>
           <a class="btn btn-ghost" href="https://solidgeeks.github.io/strata/docs.html">Docs</a>
